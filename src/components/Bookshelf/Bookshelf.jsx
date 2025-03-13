@@ -19,7 +19,8 @@ const handleInputChange = (event) => {
     
     const handleSubmit = (event) => {
         event.preventDefault();
-        setBooks({...books, [event.target.name] : event.target.value});
+        setBooks([...books, newBook]);
+        // Reset the form
         setNewBook({
             title: '',
             author: ''
